@@ -24,10 +24,10 @@ Podemos usar HTTPIE desde la terminal para generar los datos, por ejemplo:
 $ http :3000/clients
 
 # POST /clients
-$ http POST :3000/clients  name=Name business_name=Name business rfc=RFC123 id_direction=Direction cellphone=123 telephone=123, email=mail@mail.com
+$ http POST :3000/clients  name=Name business_name="Name business" rfc=RFC123 id_direction=Direction cellphone=123 telephone=123, email=mail@mail.com
 
 # PUT /todos/:id
-$ http PUT :3000/clients/1 name=OtherName business_name=Name business rfc=RFC123 id_direction=Direction cellphone=123 telephone=123, email=mail@mail.com
+$ http PUT :3000/clients/1 name=OtherName business_name="Name business" rfc=RFC123 id_direction=Direction cellphone=123 telephone=123, email=mail@mail.com
 
 # DELETE /clients/:id
 $ http DELETE :3000/clients/1
